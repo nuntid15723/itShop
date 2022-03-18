@@ -4,5 +4,5 @@
 @extends('layouts.app')
 
 @section('content')
-<home />
+<admin-component />
 @endsection

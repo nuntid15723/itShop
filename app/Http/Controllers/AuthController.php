@@ -53,7 +53,7 @@ class AuthController extends Controller
 
         $token = $user->createToken('myitshop')->plainTextToken;
 
-        Auth::login($user);
+        //Auth::login($user);
 
         $response = [
             'user' => $user,
@@ -61,10 +61,14 @@ class AuthController extends Controller
         ];
         return response($response, 201);
     }
-    public function logout(Request $request)
-    {
-        return auth()->user();
-        auth()->user()->tokens()->delete();
-        return true;
+    public function logout(Request $request){
+        
+         auth()->user()->tokens()->delete();
+
+        return response([
+            'success' => true,
+            'message' => 'log out successful'
+        ]);
     }
+
 }
