@@ -6,7 +6,7 @@
           <div class="card-header bg-primary">
             <div class="row">
               <div class="col-4">
-                <h1 class="text-center">IT NEW!!</h1>
+                <h1 class="text-center">IT NEW!!</h1> 
               </div>
               <div class="col-2"></div>
               <div class="col-5">
